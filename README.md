@@ -8,12 +8,15 @@
 
 ## 📖 Descripción
 
-La catación es el proceso sensorial para evaluar la calidad del café. En este proyecto analizo un conjunto de datos con **más de 1300 muestras** de cafés arábica evaluados por Q‑Graders. El objetivo es descubrir qué variables (altitud, variedad, proceso, región) tienen mayor impacto en la puntuación total, y construir un modelo predictivo para estimar la calidad.
+La catación es el proceso sensorial utilizado por expertos para evaluar la calidad del café.
+En este proyecto analizo un conjunto de datos con más de 1 300 muestras de cafés provenientes de diferentes regiones de Brasil.
+El objetivo es realizar un análisis exploratorio profundo para descubrir patrones, entender cómo se relacionan los atributos sensoriales entre sí y detectar si la región de origen, la altitud o el método de procesamiento marcan diferencias significativas en la puntuación final. descubrir qué variables (altitud, variedad, proceso, región) tienen mayor impacto en la puntuación total, y construir un modelo predictivo para estimar la calidad.
 
 ## 📊 Dataset
 
-Los datos provienen de [Coffee Quality Institute (CQI)](https://github.com/jldbc/coffee-quality-database) e incluyen:
-
+<!--Los datos provienen de [Coffee Quality Institute (CQI)](https://github.com/jldbc/coffee-quality-database) e incluyen:-->
+Los datos provienen de una **investigación de campo** que recopiló más de 1 300 muestras de café en distintas regiones productoras de Brasil.  
+Las cataciones fueron realizadas por panelistas entrenados, evaluando atributos sensoriales bajo protocolo SCA 
 - `Total Cup Points`: Puntuación global (0–100)
 - `Aroma`, `Flavor`, `Aftertaste`, `Acidity`, `Body`, etc.
 - `Altitude`, `Region`, `Variety`, `Processing Method`
