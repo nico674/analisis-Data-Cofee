@@ -29,7 +29,7 @@ Las cataciones fueron realizadas por panelistas entrenados, evaluando atributos 
 2. **Correlaciones**: ¿Qué atributos sensoriales están más relacionados con la puntuación final?
 3. **Modelado**: Predecir `Total Cup Points` usando regresión lineal / Random Forest.
 4. **Visualización**: Crear un dashboard interactivo con Streamlit (opcional).
-
+<!--
 ## 🧪 Metodología
 
 1. Limpieza y manejo de valores nulos.
@@ -47,6 +47,6 @@ Las cataciones fueron realizadas por panelistas entrenados, evaluando atributos 
 
 *(Añade aquí tus mejores gráficos: mapa de correlaciones, distribución por país, importancia de features.)*
 
-![ejemplo_grafico](assets/grafico_altitud.png)
+![ejemplo_grafico](assets/grafico_altitud.png)-->
 
 ## 📁 Estructura del Repositorio
