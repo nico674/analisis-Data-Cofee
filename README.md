@@ -21,7 +21,7 @@ Las cataciones fueron realizadas por panelistas entrenados, evaluando atributos 
 - `Aroma`, `Flavor`, `Aftertaste`, `Acidity`, `Body`, etc.
 - `Altitude`, `Region`, `Variety`, `Processing Method`
 
-*El dataset se encuentra en la carpeta `data/` con el nombre `coffee_quality.csv`.*
+<!--*El dataset se encuentra en la carpeta `data/` con el nombre `coffee_quality.csv`.*-->
 
 ## 🎯 Objetivos
 
