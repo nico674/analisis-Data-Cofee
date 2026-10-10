@@ -1,52 +1,45 @@
-# ☕ Análisis de Catación de Café
-
-**Explorando qué hace grande a una taza de café: factores que influyen en la puntuación de catación.**
-
-
-
+---
+title: Dashboard Café Brasil
+emoji: ☕
+colorFrom: green
+colorTo: yellow
+sdk: streamlit
+sdk_version: 1.32.0
+app_file: app.py
+pinned: false
 ---
 
-## 📖 Descripción
+# ☕ Dashboard Café Brasil (COE 2023)
 
-La catación es el proceso sensorial utilizado por expertos para evaluar la calidad del café.
-En este proyecto analizo un conjunto de datos con más de 1 300 muestras de cafés provenientes de diferentes regiones de Brasil.
-El objetivo es realizar un análisis exploratorio profundo para descubrir patrones, entender cómo se relacionan los atributos sensoriales entre sí y detectar si la región de origen, la altitud o el método de procesamiento marcan diferencias significativas en la puntuación final. descubrir qué variables (altitud, variedad, proceso, región) tienen mayor impacto en la puntuación total, y construir un modelo predictivo para estimar la calidad.
+Dashboard interactivo en **Streamlit** para el análisis exploratorio (EDA) de las
+muestras del *Cup of Excellence* de Brasil.
 
-## 📊 Dataset
+## Contenido
 
-<!--Los datos provienen de [Coffee Quality Institute (CQI)](https://github.com/jldbc/coffee-quality-database) e incluyen:-->
-Los datos provienen de una **investigación de campo** que recopiló más de 1 300 muestras de café en distintas regiones productoras de Brasil.  
-Las cataciones fueron realizadas por panelistas entrenados, evaluando atributos sensoriales bajo protocolo SCA 
-- `Total Cup Points`: Puntuación global (0–100)
-- `Aroma`, `Flavor`, `Aftertaste`, `Acidity`, `Body`, etc.
-- `Altitude`, `Region`, `Variety`, `Processing Method`
+| Pestaña | Qué muestra |
+|---|---|
+| Resumen | Métricas clave y registros por año / categoría |
+| Estadísticas descriptivas | `describe()` de las columnas clave y nulos |
+| Distribuciones | Histogramas interactivos por columna numérica |
+| Matriz de correlación | Heatmap con umbral mínimo de \|r\| (Pearson / Spearman) |
+| Datos crudos | Tabla filtrada + descarga CSV |
+| Ganadores por año | Top N por año, evolución de PONT por categoría |
+| Atributos sensoriales | Top atributos correlacionados con PONT |
+| PCA | Scree plot, mapa de muestras y loadings |
+| Clustering | K-means sobre componentes PCA, perfiles y relación con PONT |
+| MFA | Análisis Factorial Múltiple (localización/cultivo vs. sensorial) por región |
 
-<!--*El dataset se encuentra en la carpeta `data/` con el nombre `coffee_quality.csv`.*-->
+## Uso
 
-## 🎯 Objetivos
+1. Sube tu Excel desde la barra lateral (`.xlsx` / `.xls`), **o**
+2. coloca un archivo llamado `data.xlsx` en la raíz del repositorio (se carga por defecto).
 
-1. **EDA**: ¿Cómo se distribuyen las puntuaciones? ¿Existen diferencias por país o altitud?
-2. **Correlaciones**: ¿Qué atributos sensoriales están más relacionados con la puntuación final?
-3. **Modelado**: Predecir `Total Cup Points` usando regresión lineal / Random Forest.
-4. **Visualización**: Crear un dashboard interactivo con Streamlit (opcional).
-<!--
-## 🧪 Metodología
+La hoja principal esperada es `BRAZIL COE_Sin Atr`. El encabezado se detecta
+automáticamente (busca la fila con `Amostras`, `POS`, `PONT`, ...).
 
-1. Limpieza y manejo de valores nulos.
-2. Análisis estadístico descriptivo y visualizaciones con `seaborn`.
-3. Feature engineering (categorización de altitud, encoding de variedades).
-4. Modelos supervisados (Regresión Lineal, Árboles de Decisión, XGBoost).
-5. Evaluación con RMSE y R², análisis de importancia de variables.
+## Ejecutar en local
 
-## 📈 Resultados Principales
-
-- La **altitud** y el **proceso de lavado** muestran correlación positiva con la puntuación.
-- Los atributos **Flavor** y **Aftertaste** son los que más peso tienen en la puntuación total.
-- El modelo Random Forest logró un **R² de 0.82** y un error (RMSE) de 1.2 puntos.
-- Los cafés de **Etiopía** y **Kenia** presentan las medias más altas.
-
-*(Añade aquí tus mejores gráficos: mapa de correlaciones, distribución por país, importancia de features.)*
-
-![ejemplo_grafico](assets/grafico_altitud.png)-->
-
-## 📁 Estructura del Repositorio
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
