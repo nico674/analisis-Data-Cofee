@@ -37,7 +37,7 @@ st.set_page_config(page_title="Dashboard Café Brasil", page_icon="☕", layout=
 # 1. CONFIGURACIÓN (aquí puedes adaptar nombres de columnas y rutas)
 # =============================================================================
 # Archivo por defecto (ruta relativa al repositorio)
-ARCHIVO_POR_DEFECTO = Path(__file__).parent / "data.xlsx"
+ARCHIVO_POR_DEFECTO = Path(__file__).parent / "COE BRAZIL_2023.xlsx"
 HOJA_PRINCIPAL = "BRAZIL COE_Sin Atr"
 
 # Nombres canónicos de las columnas clave
