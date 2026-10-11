@@ -37,9 +37,12 @@ muestras del *Cup of Excellence* de Brasil.
 La hoja principal esperada es `BRAZIL COE_Sin Atr`. El encabezado se detecta
 automáticamente (busca la fila con `Amostras`, `POS`, `PONT`, ...).
 
-## Ejecutar en local
+## Ejecutar en local 
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
+## Ejecutada en la cloud de streamlit.app
+
+    https://coffeanajuan.streamlit.app/
